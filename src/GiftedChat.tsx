@@ -633,17 +633,17 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
   }
 
   scrollToBottom(animated = true) {
-    if (this._messageContainerRef && this._messageContainerRef.current) {
-      const { inverted } = this.props
-      if (!inverted) {
-        this._messageContainerRef.current.scrollToEnd({ animated })
-      } else {
-        this._messageContainerRef.current.scrollToOffset({
-          offset: 0,
-          animated,
-        })
-      }
-    }
+ // if (this._messageContainerRef && this._messageContainerRef.current) {
+ //   const { inverted } = this.props
+ //   if (!inverted) {
+ //     this._messageContainerRef.current.scrollToEnd({ animated })
+ //   } else {
+ //     this._messageContainerRef.current.scrollToOffset({
+ //       offset: 0,
+ //        animated,
+ //      })
+ //    }
+ //  }
   }
 
   renderMessages() {
