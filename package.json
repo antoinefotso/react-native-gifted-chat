@@ -35,7 +35,7 @@
     "test": "TZ=Europe/Paris jest --no-watchman",
     "test:watch": "TZ=Europe/Paris jest --watch",
     "test:coverage": "TZ=Europe/Paris jest --coverage",
-    "prepare": "yarn lint && yarn build && yarn test && yarn config:npm",
+    "prepare": "npm run build",
     "postpublish": "yarn config:dev"
   },
   "jest": {
